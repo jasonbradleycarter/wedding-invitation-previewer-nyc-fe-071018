@@ -1,0 +1,35 @@
+html {
+  background-color: black;
+  color: white;
+  font-family: verdana;
+  font-size: 17px;
+}
+
+.tab-container {
+  border-bottom: 1px solid white;
+}
+
+.input {
+  border: 2.5px solid goldenrod;
+  padding: 3px;
+  height: 20px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.input:focus { 
+    background-color: mistyrose;
+    border-color: lightblue;
+}
+
+.header {
+  font-family: Times New Roman;
+  font-size: 42px;
+  text-shadow: 2px 2px grey;
+}
+
+.brideGroom {
+
+}
