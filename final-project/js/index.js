@@ -1,4 +1,4 @@
-/*
+/* javascript
 //html
 header
 tabs/preset background
@@ -29,3 +29,68 @@ onClick new image loads for background
 fonts change when background changes
 
 */
+
+const twoInitials = document.getElementById('twoInitials')
+function getInitials() {
+  const first = document.getElementById('first')
+  const second = document.getElementById('second')
+  let firstText
+  let secondText
+  if (first.innerHTML.length === 0) {
+    firstText = ""
+  }
+  else {
+    firstText = first.innerHTML[0].toUpperCase()
+  }
+  
+  if (second.innerHTML.length === 0) {
+    secondText = ""
+  }
+  else {
+    secondText = second.innerHTML[0].toUpperCase()
+  }
+  
+  initialsText = firstText + " & " + secondText
+  
+  const initials = document.getElementById('initials')
+  initials.innerHTML = initialsText
+  
+  console.log("works")
+  
+  // const initials = document.getElementById('firstName')
+  // initials.addEventListener('keyup', event => {
+  // first.value = initials.value
+// })
+}
+
+const firstName = document.getElementById('firstName')
+const first = document.getElementById('first')
+firstName.addEventListener('keyup', event => {
+  first.innerHTML = firstName.value
+  getInitials()
+})
+
+const secondName = document.getElementById('secondName')
+const second = document.getElementById('second')
+secondName.addEventListener('keyup', event => {
+  second.innerHTML = secondName.value
+  getInitials()
+})
+
+const lastName = document.getElementById('lastName')
+const last = document.getElementById('last')
+lastName.addEventListener('keyup', event => {
+  last.innerHTML = lastName.value
+})
+
+const weddingDate = document.getElementById('date')
+const date = document.getElementById('weddingdate')
+weddingDate.addEventListener('keyup', event => {
+  date.innerHTML = weddingDate.value
+})
+
+const weddingLocation = document.getElementById('location')
+const site = document.getElementById('weddinglocation')
+weddingLocation.addEventListener('keyup', event => {
+  site.innerHTML = weddingLocation.value
+})
