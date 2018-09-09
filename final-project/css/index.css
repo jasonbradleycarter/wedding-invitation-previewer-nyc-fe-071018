@@ -1,5 +1,8 @@
+/* css */
+
 html {
   color: #031f7f;
+  background-image: url("../images/crumpled-paper-as-background-stop-motion-animation_s39hbcho__F0000.png");
   font-family: verdana;
   font-size: 17px;
   height: 100vh;
@@ -16,6 +19,7 @@ html {
 }
 
 .input {
+  border-radius: 13px;
   border: 2.5px solid goldenrod;
   padding: 3px;
   height: 20px;
@@ -25,9 +29,11 @@ html {
   flex-wrap: wrap;
 }
 
-.input:focus { 
+.input:focus {
+  border-radius: 13px;
   background-color: mistyrose;
   border-color: lightblue;
+  outline: none;
 }
 
 .header {
@@ -37,9 +43,10 @@ html {
 }
 
 .aside {
-  color: white;
+  webkit-text-stroke-width: 0.25px;
+  color: #031f7f;
   display: inline-block;
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   font-family: Times New Roman;
   text-align: center;
 }
@@ -73,21 +80,26 @@ body {
   font-family: Arial;
   font-size: 17px;
   
-  /* background-image: url('/images/pexels-photo-248797.jpg?auto=compress') */
+  /*background-image: url('./images/pexels-photo-248797.jpg?auto=compress')*/
 }
 
 .Train {
   font-family: Trebuchet MS;
   font-size: 17px;
   
-  /* background-image: url('/images/pexels-photo.jpg?auto=compress') */
+  /*background-image: url('./images/pexels-photo.jpg?auto=compress')*/
 }
 
 .Gatto {
   font-family: Sans-Serif;
   font-size: 17px;
   
-  /* background-image: url('/images/embed2.jpg') */
+  /*background-image: url('./images/embed2.jpg')*/
+}
+
+.invitation {
+  text-align: center;
+  align-content: stretch;
 }
 
 
