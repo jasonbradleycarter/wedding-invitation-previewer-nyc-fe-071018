@@ -32,63 +32,95 @@ fonts change when background changes
 
 */
 
-const twoInitials = document.getElementById('twoInitials')
+const twoInitials = document.getElementById('twoInitials');
 function getInitials() {
-  const first = document.getElementById('first')
-  const second = document.getElementById('second')
-  let firstText
-  let secondText
+  const first = document.getElementById('first');
+  const second = document.getElementById('second');
+  let firstText;
+  let secondText;
   if (first.innerHTML.length === 0) {
-    firstText = ""
+    firstText = "";
   }
   else {
-    firstText = first.innerHTML[0].toUpperCase()
+    firstText = first.innerHTML[0].toUpperCase();
   }
   
   if (second.innerHTML.length === 0) {
-    secondText = ""
+    secondText = "";
   }
   else {
-    secondText = second.innerHTML[0].toUpperCase()
+    secondText = second.innerHTML[0].toUpperCase();
   }
   
-  initialsText = firstText + " & " + secondText
+  initialsText = firstText + " & " + secondText;
   
-  const initials = document.getElementById('initials')
-  initials.innerHTML = initialsText
+  const initials = document.getElementById('initials');
+  initials.innerHTML = initialsText;
 }
 
-const firstName = document.getElementById('firstName')
-const first = document.getElementById('first')
+const firstName = document.getElementById('firstName');
+const first = document.getElementById('first');
 firstName.addEventListener('keyup', event => {
-  first.innerHTML = firstName.value
-  getInitials()
-})
+  first.innerHTML = firstName.value;
+  getInitials();
+});
 
-const secondName = document.getElementById('secondName')
-const second = document.getElementById('second')
+const secondName = document.getElementById('secondName');
+const second = document.getElementById('second');
 secondName.addEventListener('keyup', event => {
-  second.innerHTML = secondName.value
-  getInitials()
-})
+  second.innerHTML = secondName.value;
+  getInitials();
+});
 
-const lastName = document.getElementById('lastName')
-const last = document.getElementById('last')
+const lastName = document.getElementById('lastName');
+const last = document.getElementById('last');
 lastName.addEventListener('keyup', event => {
-  last.innerHTML = lastName.value
-})
+  last.innerHTML = lastName.value;
+});
 
-const weddingDate = document.getElementById('date')
-const date = document.getElementById('weddingdate')
+const weddingDate = document.getElementById('date');
+const date = document.getElementById('weddingdate');
 weddingDate.addEventListener('keyup', event => {
-  date.innerHTML = weddingDate.value
-})
+  date.innerHTML = weddingDate.value;
+});
 
-const weddingLocation = document.getElementById('location')
-const site = document.getElementById('weddinglocation')
+const weddingLocation = document.getElementById('location');
+const site = document.getElementById('weddinglocation');
 weddingLocation.addEventListener('keyup', event => {
-  site.innerHTML = weddingLocation.value
-})
+  site.innerHTML = weddingLocation.value;
+});
 
 
+function sandClick(event) {
+  document.querySelector(".sandContent");
+  const sandClick = document.getElementsByClassName('sandContent');
+  let sandContent;
+  document.addEventListener('click', event => {
+    var element = document.getElementById("sand");
+    element.classList.toggle("sand");
+    console.log('ok');
+  });
+}
+
+function trainClick(event) {
+  document.querySelector(".trainContent");
+  const trainClick = document.getElementsByClassName('trainContent');
+  let trainContent;
+  document.addEventListener('click', event => {
+    var element = document.getElementById("train");
+    element.classList.toggle("train");
+    console.log('ok');
+  });
+}
+
+function gattoClick(event) {
+  document.querySelector(".gattoContent");
+  const gattoClick = document.getElementsByClassName('gattoContent');
+  let gattoContent;
+  document.addEventListener('click', event => {
+    var element = document.getElementById("gatto");
+    element.classList.toggle("gatto");
+    console.log('ok');
+  });
+}
 

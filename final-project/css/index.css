@@ -43,10 +43,11 @@ html {
 }
 
 .aside {
-  webkit-text-stroke-width: 0.25px;
+  border: 1px solid black;
+  text-shadow: 1px 1px white;
   color: #031f7f;
   display: inline-block;
-  /*background-color: lightblue;*/
+  background-color: lightblue;
   font-family: Times New Roman;
   text-align: center;
 }
@@ -57,7 +58,6 @@ html {
 }
 .column {
   margin-top: 7px;
-  padding-top: 7px;
   flex: 1;
 }
 
@@ -76,30 +76,30 @@ body {
   height: 100vh;
 }
 
-.Sand {
+.sand {
   font-family: Arial;
   font-size: 17px;
   
-  /*background-image: url('./images/pexels-photo-248797.jpg?auto=compress')*/
+  /*background-image: url("../images/pexels-photo-248797.jpg?auto=compress");*/
 }
 
-.Train {
-  font-family: Trebuchet MS;
+.train {
+  font-family: Arial;
   font-size: 17px;
   
-  /*background-image: url('./images/pexels-photo.jpg?auto=compress')*/
+  /*background-image: url("../images/pexels-photo.jpg?auto=compress");*/
 }
 
-.Gatto {
-  font-family: Sans-Serif;
+.gatto {
+  font-family: Arial;
   font-size: 17px;
   
-  /*background-image: url('./images/embed2.jpg')*/
+  /*background-image: url("../images/embed2.jpg");*/
 }
 
 .invitation {
-  text-align: center;
-  align-content: stretch;
+  margin: auto;
+  /*text-align: center;*/
+  /*align-content: stretch;*/
 }
-
 
