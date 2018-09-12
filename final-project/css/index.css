@@ -14,12 +14,13 @@ html {
 }
 
 .titles {
+  border-radius: 50px 20px;
   width: 50%;
   text-align: center;
 }
 
 .input {
-  border-radius: 13px;
+  border-radius: 50px 20px;
   border: 2.5px solid goldenrod;
   padding: 3px;
   height: 20px;
@@ -30,7 +31,7 @@ html {
 }
 
 .input:focus {
-  border-radius: 13px;
+  border-radius: 50px 20px;
   background-color: mistyrose;
   border-color: lightblue;
   outline: none;
@@ -43,6 +44,7 @@ html {
 }
 
 .aside {
+  height: 70vh;
   border: 1px solid black;
   text-shadow: 1px 1px white;
   color: #031f7f;
@@ -77,29 +79,47 @@ body {
 }
 
 .sand {
-  font-family: Arial;
-  font-size: 17px;
-  
-  /*background-image: url("../images/pexels-photo-248797.jpg?auto=compress");*/
+  transition-duration: 2s;
+  /*color: white;*/
+  /*text-shadow: 2px 2px black;*/
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: url("../images/blue-wallpaper.png");
 }
 
 .train {
-  font-family: Arial;
-  font-size: 17px;
-  
-  /*background-image: url("../images/pexels-photo.jpg?auto=compress");*/
+  transition-duration: .25s;
+  /*color: orange;*/
+  /*text-shadow: 2px 2px black;*/
+  font-family: Times New Roman;
+  font-size: 27px;
+  background-image: url("../images/green-yellow-wallpaper.jpg");
 }
 
 .gatto {
-  font-family: Arial;
-  font-size: 17px;
-  
-  /*background-image: url("../images/embed2.jpg");*/
+  transition-duration: .25s;
+  /*color: yellow;*/
+  text-shadow: 1px 1px yellow;
+  font-family: Comic Sans MS;
+  font-size: 23px;
+  background-image: url("../images/purple-wallpaper.jpg");
 }
 
 .invitation {
   margin: auto;
-  /*text-align: center;*/
-  /*align-content: stretch;*/
 }
 
+#train:hover, #sand:hover, #gatto:hover {
+    color: yellow;
+    background-color: purple;
+    transition-duration: .25s;
+    outline: none;
+    border-radius: 50px 20px;
+}
+
+button {
+  outline: none;
+  border-radius: 50px 20px;
+  font-size: 13px;
+}

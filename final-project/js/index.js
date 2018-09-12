@@ -92,35 +92,24 @@ weddingLocation.addEventListener('keyup', event => {
 
 
 function sandClick(event) {
-  document.querySelector(".sandContent");
-  const sandClick = document.getElementsByClassName('sandContent');
-  let sandContent;
-  document.addEventListener('click', event => {
-    var element = document.getElementById("sand");
-    element.classList.toggle("sand");
-    console.log('ok');
-  });
+  const invitation = document.getElementById('invitation');
+  invitation.classList.remove("train")
+  invitation.classList.remove("gatto")
+  invitation.classList.add("sand");
 }
 
 function trainClick(event) {
-  document.querySelector(".trainContent");
-  const trainClick = document.getElementsByClassName('trainContent');
-  let trainContent;
-  document.addEventListener('click', event => {
-    var element = document.getElementById("train");
-    element.classList.toggle("train");
-    console.log('ok');
-  });
-}
+  const invitation = document.getElementById('invitation');
+  invitation.classList.remove("sand")
+  invitation.classList.remove("gatto")
+  invitation.classList.add("train");
+  }
 
 function gattoClick(event) {
-  document.querySelector(".gattoContent");
-  const gattoClick = document.getElementsByClassName('gattoContent');
-  let gattoContent;
-  document.addEventListener('click', event => {
-    var element = document.getElementById("gatto");
-    element.classList.toggle("gatto");
-    console.log('ok');
-  });
-}
+  const invitation = document.getElementById('invitation');
+  invitation.classList.remove("sand")
+  invitation.classList.remove("gatto")
+  invitation.classList.add("gatto");
+  }
+
 
